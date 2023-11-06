@@ -5,7 +5,7 @@
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #000;
+    background-color: #c8e7f6;
 }
 
 .avatar {
@@ -27,3 +27,14 @@
     flex-wrap: wrap;
 }
 
+.picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.bio {
+    text-align: center;
+}

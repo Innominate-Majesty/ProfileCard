@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
+import profilepic from './images/profilepic.png'
 
 //root of profile card
 function App() {
@@ -10,6 +11,8 @@ function App() {
     </div>
   );
 }
+
+export default App;
 
 //profile card component -- holds all parts of the profile card
 function ProfileCard() {
@@ -34,14 +37,14 @@ function VenusProfile() {
 //VenusImage - displays the avatar/profile image
 function VenusImage() {
     //  NEEDS UPDATING //
-    return <img className="picture" src="" alt="Venus Profile Picture" />
+    return <img className="picture" src={profilepic} alt="Venus Profile Picture" />
 }
 
 //VenusBio
 function VenusBio() {
     return (
         <div className="bio">
-            <h1 className="name">Venus D</h1>
+            <h1 className="name">Venus </h1>
             <p className="biography">
                 Computer Science student learning full-stack engineering skills. My dream is to develope a pscyhological game in the future. Currently looking for internships and mentorships.
             </p>
