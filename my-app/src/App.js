@@ -16,7 +16,7 @@ function ProfileCard() {
     return (
         <section className="cardd">
             <VenusProfile />
-            <Venus Skill />
+            <VenusSkills />
         </section>
     );
 }
@@ -70,7 +70,7 @@ function Skill({ name, level }) {
     return (
         <li className="skill">
             <span className="skill-name">{name}</span>
-            <span className="skill-level">{name}</span>
+            <span className="skill-level">{level}</span>
         </li>
     );
 }
