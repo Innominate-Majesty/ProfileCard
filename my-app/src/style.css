@@ -8,14 +8,14 @@
     background-color: #c8e7f6;
 }
 
-.avatar {
+/* .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: 0 auto;
     display: block;
 
-}
+} */
 
 .intro {
     margin: 1rem 0;
@@ -37,4 +37,32 @@
 
 .bio {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skill {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(254, 200, 200);
+}
+
+.skill-icon {
+    margin-right: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }

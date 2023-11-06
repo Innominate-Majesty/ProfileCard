@@ -55,25 +55,26 @@ function VenusBio() {
 //VenusSkills - lists all the skills
 function VenusSkills() {
     const skills = [
-        { name: 'JavaScript', level: 'beginner' },
-        { name: 'HTML & CSS', level: 'beginner' },
-        { name: 'React', level: 'beginner' },
-        { name: 'Java', level: 'beginner' },
-        { name: 'Data Structures', level: 'beginner'},
+        { name: ' Java  ', icon: ' 🌺🌺🌺' },
+        { name: ' Data Structures ', icon: ' 🌺🌺🌺' },
+        { name: ' OOP  ', icon: ' 🌺🌺🌺' },
+        { name: ' JavaScript  ', icon: ' 🌺🌺🌺' },
+        { name: ' HTML & CSS  ', icon: ' 🌺🌺🌺' },
+        { name: ' React  ', icon: ' 🌺'}
     ];
 
     return (
         <ul className="skills">
-            {skills.map((skill, index) => (<Skill key={index} name={skill.name} level={skill.level}  />))}
+            {skills.map((skill, index) => (<Skill key={index} name={skill.name} icon={skill.icon}  />))}
         </ul>
     ); 
 }
 
-function Skill({ name, level }) {
+function Skill({ name, icon }) {
     return (
         <li className="skill">
             <span className="skill-name">{name}</span>
-            <span className="skill-level">{level}</span>
+            {icon && <span className="skill-icon">{icon}</span>}
         </li>
     );
 }
